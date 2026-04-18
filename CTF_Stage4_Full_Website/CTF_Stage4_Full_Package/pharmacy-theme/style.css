@@ -1,0 +1,92 @@
+/*
+Theme Name: Pharmacy Theme
+Theme URI: http://pharmacy.local
+Description: Professional pharmacy website theme for CTF challenge
+Version: 1.0
+Author: CTF Creator
+Author URI: http://pharmacy.local
+License: GPL v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: pharmacy-theme
+Domain Path: /languages
+*/
+
+/* Minimal base styles - see custom.css for full styling */
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: #1a7f5a;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+p {
+    margin: 0 0 1em 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 1.5em 0 0.5em 0;
+    font-weight: 600;
+}
+
+ul, ol {
+    margin: 1em 0;
+    padding-left: 2em;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+/* WordPress default classes */
+.alignleft {
+    float: left;
+    margin-right: 1.5em;
+}
+
+.alignright {
+    float: right;
+    margin-left: 1.5em;
+}
+
+.aligncenter {
+    display: block;
+    margin: 0 auto 1em;
+}
+
+.wp-caption {
+    margin: 0 0 1em 0;
+    text-align: center;
+}
+
+.wp-caption img {
+    margin: 0;
+}
+
+.wp-caption-text {
+    margin: 0.8em 0;
+    font-size: 0.9em;
+}
+
+.screen-reader-text {
+    position: absolute;
+    left: -9999px;
+    z-index: -999;
+}

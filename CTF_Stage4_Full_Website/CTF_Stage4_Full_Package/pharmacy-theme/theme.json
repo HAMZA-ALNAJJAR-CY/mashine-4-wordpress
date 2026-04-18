@@ -1,0 +1,59 @@
+{
+  "version": 2,
+  "name": "Pharmacy Theme",
+  "description": "Professional pharmacy website theme for CTF challenge",
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "color": "#1a7f5a",
+          "name": "Pharmacy Green",
+          "slug": "pharmacy-green"
+        },
+        {
+          "color": "#2a9f6f",
+          "name": "Light Green",
+          "slug": "light-green"
+        },
+        {
+          "color": "#0d4a3a",
+          "name": "Dark Green",
+          "slug": "dark-green"
+        },
+        {
+          "color": "#e74c3c",
+          "name": "Accent Red",
+          "slug": "accent-red"
+        },
+        {
+          "color": "#2c3e50",
+          "name": "Text Color",
+          "slug": "text-color"
+        },
+        {
+          "color": "#ffffff",
+          "name": "White",
+          "slug": "white"
+        }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        {
+          "fontFamily": "\"Segoe UI\", Tahoma, Geneva, Verdana, sans-serif",
+          "name": "System Fonts",
+          "slug": "system-fonts"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "#f8f9fa",
+      "text": "#2c3e50"
+    },
+    "typography": {
+      "fontSize": "16px"
+    }
+  }
+}

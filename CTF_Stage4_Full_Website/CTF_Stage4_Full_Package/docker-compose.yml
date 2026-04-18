@@ -1,0 +1,38 @@
+services:
+  mysql:
+    image: mariadb:latest
+    container_name: pharmacy-db
+    environment:
+      MYSQL_ROOT_PASSWORD: pharmacy_root_pass
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wp_user
+      MYSQL_PASSWORD: wp_password_123
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./mysql-data:/var/lib/mysql
+      - ./init-db.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - ctf-network
+
+  wordpress:
+    image: wordpress:latest
+    container_name: pharmacy-wordpress
+    depends_on:
+      - mysql
+    environment:
+      WORDPRESS_DB_HOST: mysql:3306
+      WORDPRESS_DB_NAME: wordpress
+      WORDPRESS_DB_USER: wp_user
+      WORDPRESS_DB_PASSWORD: wp_password_123
+      WORDPRESS_DEBUG: true
+    ports:
+      - "80:80"
+    volumes:
+      - ./wordpress:/var/www/html
+    networks:
+      - ctf-network
+
+networks:
+  ctf-network:
+    driver: bridge
